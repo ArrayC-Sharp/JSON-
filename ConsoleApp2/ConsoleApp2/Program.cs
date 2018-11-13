@@ -10,10 +10,14 @@ namespace Serialization
     {
         [DataMember]
         public string Name { get; set; }
-        public string S { get; set; }
-        public string CD { get; set; }
-        public string G { get; set; }
 
+        [DataMember]
+
+        public string S { get; set; }
+        [DataMember]
+        public string CD { get; set; }
+        [DataMember]
+        public string G { get; set; }
         [DataMember]
         public int SZ { get; set; }
         public Dress(string name,  string color_dress, string style, string gender, int size)
